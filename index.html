@@ -1,13 +1,45 @@
 <html>
-    <head>
-        <title>zarka.world</title>
-        <style>
-            a { text-decoration: none; color: #e5c05a }
-            body { background-color: black; font-family: 'MS PGothic'; color: #66aabb }
-        </style>
-    </head>
-    <body>
-        <pre style="display: flex; justify-content: center;">
+
+<head>
+    <title>zarka.world</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: #e5c05a;
+        }
+
+        body {
+            background-color: black;
+            font-family: 'MS PGothic';
+            color: #66aabb;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+        }
+
+        .text-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre style="display: flex; justify-content: center;">
                       __                                  .__       .___
 _____________ _______|  | _______     __  _  _____________|  |    __| _/
 \___   /\__  \\_  __ \  |/ /\__  \    \ \/ \/ /  _ \_  __ \  |   / __ | 
@@ -15,24 +47,32 @@ _____________ _______|  | _______     __  _  _____________|  |    __| _/
 /_____ \(____  /__|  |__|_ \(____  / /\ \/\_/ \____/|__|  |____/\____ | 
       \/     \/           \/     \/  \/                              \/ 
         </pre>
-        <br>
-        <br>
-        <br>
-        ] PORTFOLIO
-        <br>
-        •
-        <a >blank</a>
-        <br>
-        <br>
-        ] MY CONLANG
-        <br>
-        •
-        <a >blank</a>
-        <br>
-        <br>
-        ] BLOG
-        <br>
-        • 
-        <a href="blog/entry0001/">entry 0001 (XX/02/2025)</a>
-    </body>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <div class="text-container">
+            <div>
+                <p>] PORTFOLIO</p>
+                <p>• <a>blank</a></p>
+            </div>
+            <div>
+                <p>] MY CONLANG</p>
+                <p>• <a>blank</a></p>
+            </div>
+            <div>
+                <p>] BLOG</p>
+                <p>• <a href="blog/entry0001/">entry 0001 (XX/02/2025)</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="https://discord.com/invite/sb9fCmzPBp" target="_blank" rel="noopener noreferrer"><img
+                src="88x31/discordserver.gif" alt="Image Load Error" /></a>
+        <a href="https://github.com/zarka-dev"><img src="88x31/github.gif" alt="Image Load Error" /></a>
+    </div>
+</body>
+
 </html>
